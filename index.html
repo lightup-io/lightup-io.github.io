@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light UP</title>
+<style>
+    body{
+    margin: 0px;
+    }
+    header{
+    padding: 20px 40px;
+    display: flex;
+    background-color: #232d64;
+    }
+    .logo-img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .main-title{
+        font-size: 22px;
+        padding-left: 20px;
+        color: white;
+    }
+    .notice p{
+        margin: 0px ;
+    }
+    .notice-title{
+        font-size: 18px;
+    }
+    .notice-content{
+        font-size: 16px;
+    }
+    .main-button{
+        font-size: 18px;
+        border: 1px solid #232d64;
+        border-radius: 20px;
+        padding: 10px 20px;
+        background-color: white;
+        cursor: pointer;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .main-button:hover{
+        background-color: #232d64;
+        color: white;
+    }
+    .button-list{
+        margin-left: 40px ;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+    .tab-title{
+        margin: 0px;
+        padding: 20px 40px 0px 40px;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+    .mobile-support{
+        display: block;
+    }
+    @media (max-width:500px) {
+        header{
+            flex-direction: column;
+            padding: 20px 40px 0px 40px ;
+        }
+        .main-title{
+            padding: 0px;
+        }
+        .button-list{
+            margin: 0px;
+            padding-left: 40px;
+            padding-right: 40px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .main-button{
+            box-sizing: border-box;
+        }
+        .mobile-support{
+        display: none;
+    }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <img class="logo-img" src="https://i.ibb.co/nbZsLML/lightup-Logo.jpg">
+        <h1 class="main-title">Light UP 크루 포털</h1>
+    </header>
+    <p class="tab-title mobile-support" style="color: #232d64; font-size: 15px;">📢 이 페이지는 모바일에 최적화 되어있어요.</p>
+    <p class="tab-title">🔗 자주사용하는 링크</p>
+    <div class="button-list">
+        <button onclick="location.href='https://junlab.notion.site/Light-UP-Team-ECG-2ae9657119b94dd5978acc3fa3bbec2c?pvs=4' " class="main-button">Core value 'ECG'</button>
+        <button onclick="location.href='http://naver.me/5R8gTsY9' " class="main-button">마이박스(데이터센터)</button>
+        <button onclick="location.href='https://lukakaowork.junlab.xyz/' " class="main-button">카카오워크 공지 발송 시스템</button>
+        <button onclick="location.href='https://cafe.naver.com/euctl' " class="main-button">CTL 교수학습지원센터 카페</button>
+        <button onclick="location.href='https://docs.google.com/spreadsheets/d/1dErn_bK57SQV58b0GVv5ulvKYp5HOR36ZmaIZxXURmQ/edit?usp=sharing' " class="main-button">운영진 관리용 스프레드시트</button>
+    </div>
+</body>
+</html>
